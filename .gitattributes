@@ -1,0 +1,4 @@
+# Build output compiled from a source beside it; GitHub collapses these in diffs.
+levels_gen.go linguist-generated
+manifest_gen.go linguist-generated
+*.wasm binary linguist-generated

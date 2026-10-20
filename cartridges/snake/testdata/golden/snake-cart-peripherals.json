@@ -1,0 +1,151 @@
+{
+  "setText": [
+    {
+      "player": -1,
+      "line1": "SNAKE",
+      "line2": "SELECT MODE"
+    },
+    {
+      "player": -1,
+      "line1": "",
+      "line2": ""
+    },
+    {
+      "player": 1,
+      "line1": "GET",
+      "line2": "READY!"
+    },
+    {
+      "player": 1,
+      "line1": "Lives: ♥ ♥ ♥  L1",
+      "line2": "0        high: 0"
+    },
+    {
+      "player": 1,
+      "line1": "Lives: ♥ ♥ ♥  L1",
+      "line2": "3        high: 3"
+    },
+    {
+      "player": 1,
+      "line1": "Lives: ♥ ♥ ♥  L1",
+      "line2": "6        high: 6"
+    },
+    {
+      "player": -1,
+      "line1": "QUIT GAME?",
+      "line2": "HOLD RED TO QUIT"
+    },
+    {
+      "player": 1,
+      "line1": "Lives: ♥ ♥ ♥  L1",
+      "line2": "6        high: 6"
+    },
+    {
+      "player": 1,
+      "line1": "Lives: ♥ ♥    L1",
+      "line2": "6        high: 6"
+    },
+    {
+      "player": 1,
+      "line1": "Lives: ♥      L1",
+      "line2": "6        high: 6"
+    },
+    {
+      "player": 1,
+      "line1": "Lives:        L1",
+      "line2": "6        high: 6"
+    },
+    {
+      "player": 1,
+      "line1": "NEW HIGH!",
+      "line2": "6        high: 6"
+    },
+    {
+      "player": -1,
+      "line1": "SNAKE",
+      "line2": "SELECT MODE"
+    }
+  ],
+  "buttonLights": [
+    {
+      "player": -1,
+      "lights": {
+        "joya": true,
+        "joyaux1": false,
+        "joyaux2": false,
+        "joyb": false,
+        "joyc": false,
+        "joyd": false
+      },
+      "only": true
+    },
+    {
+      "player": -1,
+      "lights": {
+        "joya": true,
+        "joyaux1": false,
+        "joyaux2": false,
+        "joyb": true,
+        "joyc": false,
+        "joyd": false
+      },
+      "only": true
+    },
+    {
+      "player": 1,
+      "lights": {
+        "joya": true,
+        "joyaux1": false,
+        "joyaux2": false,
+        "joyb": false,
+        "joyc": false,
+        "joyd": false
+      },
+      "only": true
+    },
+    {
+      "player": -1,
+      "lights": {
+        "joya": true,
+        "joyaux1": false,
+        "joyaux2": false,
+        "joyb": false,
+        "joyc": false,
+        "joyd": false
+      },
+      "only": true
+    }
+  ],
+  "lightSets": [
+    {
+      "player": -1,
+      "on": false
+    },
+    {
+      "player": -1,
+      "on": false
+    },
+    {
+      "player": -1,
+      "on": false
+    }
+  ],
+  "strategy": [
+    {
+      "op": "push",
+      "kind": 1
+    },
+    {
+      "op": "lockseat",
+      "seat": 1
+    },
+    {
+      "op": "lockseat",
+      "seat": 1
+    },
+    {
+      "op": "unlock"
+    }
+  ],
+  "exitCalls": 1
+}

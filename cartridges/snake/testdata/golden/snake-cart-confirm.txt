@@ -1,0 +1,72 @@
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a.....bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bccccc###c#c#c###c###cccccc##cc#cc#c#c###c###cccccce.....a
+a.....bccccc#c#c#c#cc#ccc#cccccc#ccc#c#c###c#ccccc#cccccce.....a
+a.....bccccc#c#c#c#cc#ccc#cccccc#c#c###c###c###cc#ccccccce.....a
+a.....bccccc###c#c#cc#ccc#cccccc#c#c#c#c#c#c#cccccccccccce.....a
+a.....bccccccc#c###c###cc#ccccccc##c#c#c#c#c###cc#ccccccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bccccccfcccccmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmccce.....a
+a.....bccccfhhhfcccm.................................mccce.....a
+a.....bccccfhhhfcccm.................................mccce.....a
+a.....bcccfhhhhhfccm.................................mccce.....a
+a.....bccccfhhhfcccm.................................mccce.....a
+a.....bccccfhhhfcccm.................................mccce.....a
+a.....bccccccfcccccmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....bcLcLcLLLcLcccLLccccccLLLcLLLcccccLLLcLcLcLLLcLLLcce.....a
+a.....bcLcLcLcLcLcccLcLccccccLccLcLcccccLcLcLcLccLcccLccce.....a
+a.....bcLLLcLcLcLcccLcLccccccLccLcLcccccLcLcLcLccLcccLccce.....a
+a.....bcLcLcLcLcLcccLcLccccccLccLcLcccccLLLcLcLccLcccLccce.....a
+a.....bcLcLcLLLcLLLcLLcccccccLccLLLcccccccLcLLLcLLLccLccce.....a
+a.....bcccccccccccccccccccccccccccccccccccccccccccccccccce.....a
+a.....eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.....a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a.................................................i............a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+a..............................................................a
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+--- legend ---
+a = #00526b/ff
+b = #58585d/ff
+c = #1a1a20/ff
+e = #0f0f13/ff
+f = #460a0a/ff
+h = #8c1e1e/ff
+i = #720000/ff

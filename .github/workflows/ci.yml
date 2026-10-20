@@ -1,0 +1,87 @@
+# Builds against the engine repo's tagged releases (sdk/{cartlib,ui,fsm,levels}
+# and the root module, for carttest and tools/wasmfix). It needs those tags
+# published and scripts/release-deps.sh applied, so it cannot resolve modules
+# on a checkout that still carries the relative replace directives.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  TINYGO_VERSION: "0.42.0"
+  GO_VERSION: "1.27.x" # TinyGo 0.42 needs Go 1.25+; the modules still declare 1.23.4
+
+jobs:
+  format:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: false
+      - run: make fmt-check
+
+  fleetlint:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: false
+      - name: Manuals current and indexed
+        run: go -C tools/fleetlint test ./...
+
+  license:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - run: make license-check
+
+  cartridge:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        cart: [life, snake]
+    defaults:
+      run:
+        working-directory: cartridges/${{ matrix.cart }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache-dependency-path: cartridges/${{ matrix.cart }}/go.sum
+      - name: Install TinyGo ${{ env.TINYGO_VERSION }}
+        run: |
+          url="https://github.com/tinygo-org/tinygo/releases/download/v${TINYGO_VERSION}/tinygo_${TINYGO_VERSION}_amd64.deb"
+          wget -nv --tries=3 --retry-connrefused --waitretry=5 --timeout=30 "$url"
+          sudo dpkg -i "tinygo_${TINYGO_VERSION}_amd64.deb"
+          tinygo version
+      - name: Vet
+        run: go vet ./...
+      # Judge the shipped binary, rebuild, judge the rebuilt one. Byte
+      # equality only holds on the host that built the committed .wasm and
+      # skips loudly here; the goldens against the rebuild are the drift check.
+      - name: Source and binary agree
+        run: go test -run 'WasmMatchesSource' -v ./...
+      - name: Goldens against the checked-in wasm
+        run: go test -skip 'WasmMatchesSource' ./...
+      - name: Rebuild ${{ matrix.cart }}.wasm
+        working-directory: .
+        run: make cart-${{ matrix.cart }}
+      - name: Goldens against the rebuilt wasm
+        run: go test -skip 'WasmMatchesSource' ./...

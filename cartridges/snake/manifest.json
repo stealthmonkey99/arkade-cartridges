@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "abi": 1,
+  "slug": "snake",
+  "title": "Snake",
+  "publisher": "Årkade",
+  "author": "Matt Bielich",
+  "version": "1.5.1",
+  "description": "Eat apples, grow long, and never meet your own tail.",
+  "tags": [
+    "arcade",
+    "action",
+    "classic"
+  ],
+  "players": [
+    "1p",
+    "2p-versus"
+  ],
+  "audience": "all-ages",
+  "capabilities": [],
+  "visibility": "public",
+  "icon": "assets/icon.arkadesprite.png",
+  "logo": "assets/title.arkadesprite.png",
+  "manual": "MANUAL.md",
+  "links": {
+    "source": "https://github.com/stealthmonkey99/arkade-cartridges/tree/main/cartridges/snake"
+  }
+}

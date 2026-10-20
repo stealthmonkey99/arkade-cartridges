@@ -1,0 +1,36 @@
+Årkade — licensing application
+==============================
+
+Årkade is free software, licensed under the GNU General Public License,
+version 2 **or (at your option) any later version**.
+
+SPDX-License-Identifier: GPL-2.0-or-later
+
+The file `LICENSE` in this repository contains the verbatim text of the
+GNU General Public License, version 2 (June 1991). The notice below —
+following the "How to Apply These Terms" appendix of that license — is
+what upgrades it to "or any later version": you may redistribute and
+modify this software under GPLv2, or under any later version of the GPL
+published by the Free Software Foundation, at your choice.
+
+    Årkade Cartridges, the game collection for the Årkade 64×64 LED arcade cabinet
+    Copyright (C) 2026 Matt Bielich
+
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License as
+    published by the Free Software Foundation; either version 2 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+    02110-1301 USA, or see <https://www.gnu.org/licenses/>.
+
+This notice covers every file in this repository unless a file or its
+directory says otherwise. Every source file carries a one-line SPDX
+identifier, GPL-2.0-or-later; this file and LICENSE are the full notice.

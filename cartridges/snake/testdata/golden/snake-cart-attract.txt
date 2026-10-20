@@ -1,0 +1,70 @@
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+             GGG G  G GG  G G GGG                               
+             G   GG G G G G G G                                 
+             GGG G GG GGG GG  GGG                               
+               G G  G G G G G G                                 
+             GGG G  G G G G G GGG                               
+                                                                
+                                                                
+                                                                
+                                                                
+              aaaaaa                                            
+             a aaaa a  GG  GG  GG       G  GGG GGG              
+             a aaaa a  G G G G G G     GG    G G G              
+               aaaa    GGG GGG GGG      G  GGG G G              
+                aa     G G G G G G      G  G   G G              
+                aa     G G G G G G     GGG GGG GGG              
+               baab                                             
+              bbbbbb                                            
+                                                                
+                                                                
+                                                                
+             cc   c  cc      ccc ccc                            
+             c c c c c c     c c c c                            
+             cc  c c cc      ccc c c                            
+             c c c c c c       c c c                            
+             cc   c  cc      ccc ccc                            
+                                                                
+                                                                
+                                                e               
+                                                f               
+                                                f               
+                                                f               
+                                                f               
+                                                f               
+                                                f               
+                                                f               
+                                fffffffffffffffff               
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+--- legend ---
+a = #ffc800/ff
+b = #af8900/ff
+c = #d2d2d2/ff
+e = #28e628/ff
+f = #008200/ff

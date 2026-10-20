@@ -1,0 +1,100 @@
+// --- arkade ---
+// {
+//   "arkade": 1,
+//   "kind": "levels",
+//   "name": "patterns",
+//   "description": "Seven classic Game of Life patterns (acorn, r-pentomino, Gosper glider gun, glider, LWSS, diehard, pentadecathlon), weighted and drawn at random to reseed the board.",
+//   "tags": [
+//     "life",
+//     "seed"
+//   ],
+//   "generator": {
+//     "tool": "levellab",
+//     "version": "1.0.0"
+//   }
+// }
+// --- arkade ---
+
+// Life's seven stamp patterns — the source of truth, hand-editable here or
+// in levellab (arkade.build/dev/tools). `make build` compiles it into the Go
+// the cartridge builds in.
+//
+// These are NOT levels. Life has no campaign: a world is (re)seeded by
+// drawing one recipe from a weighted table and stamping it somewhere on
+// the field, so what a "level" holds here is a PATTERN — the cells that
+// get stamped — and the file is named for that.
+//
+// The order below is the draw table's order (seeds.go's recipes()), which
+// the weighted roll walks front to back; every golden was recorded against
+// that walk, so reordering these blocks is a behaviour change, not a
+// tidy-up.
+//
+// `weight` is the pattern's share of the draw, and each pattern heads
+// exactly one recipe — though a recipe may be more than its headline
+// pattern, and its NAME is the recipe's rather than the pattern's:
+//
+//	acorn          -> "acorn", centred
+//	r-pentomino    -> "r-pentomino", centred
+//	gosper-gun     -> "gosper-gun", tucked near the top-left
+//	glider         -> "glider-fleet", 4-7 scattered and mirrored
+//	lwss           -> "spaceship-parade", 2-4 ships plus a centred r-pentomino
+//	diehard        -> "diehard", centred
+//	pentadecathlon -> "heartbeat", opposite a second r-pentomino
+//
+// The eighth recipe, "soup", has no pattern — it is a random density fill,
+// so it stays a weight in seeds.go with nothing to draw here.
+
+pack patterns
+
+legend
+  . dead
+  # live
+
+level acorn
+  weight 4
+  |.#.....|
+  |...#...|
+  |##..###|
+
+level r-pentomino
+  weight 4
+  |.##|
+  |##.|
+  |.#.|
+
+level gosper-gun
+  weight 3
+  |........................#...........|
+  |......................#.#...........|
+  |............##......##............##|
+  |...........#...#....##............##|
+  |##........#.....#...##..............|
+  |##........#...#.##....#.#...........|
+  |..........#.....#.......#...........|
+  |...........#...#....................|
+  |............##......................|
+
+level glider
+  weight 3
+  |.#.|
+  |..#|
+  |###|
+
+level lwss
+  weight 2
+  |#..#.|
+  |....#|
+  |#...#|
+  |.####|
+
+level diehard
+  weight 1
+  |......#.|
+  |##......|
+  |.#...###|
+
+level pentadecathlon
+  weight 2
+  |..#....#..|
+  |##.####.##|
+  |..#....#..|
