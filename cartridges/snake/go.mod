@@ -17,11 +17,3 @@ require (
 	golang.org/x/sys v0.29.0 // indirect
 	golang.org/x/term v0.28.0 // indirect
 )
-
-replace (
-	github.com/stealthmonkey99/arkade => ../../../arkade
-	github.com/stealthmonkey99/arkade/sdk/cartlib => ../../../arkade/sdk/cartlib
-	github.com/stealthmonkey99/arkade/sdk/fsm => ../../../arkade/sdk/fsm
-	github.com/stealthmonkey99/arkade/sdk/levels => ../../../arkade/sdk/levels
-	github.com/stealthmonkey99/arkade/sdk/ui => ../../../arkade/sdk/ui
-)
