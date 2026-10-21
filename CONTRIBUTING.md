@@ -18,6 +18,12 @@ project, not one with a governance model, so the deal is up front.
   fork is always a fine home for your version.
 - **Fixes and polish are the sweet spot.** You played a cartridge, something
   bugged you, you fixed it: bug fixes, balance and feel, manual corrections.
+- **This repository is a published mirror.** Development happens in a
+  private upstream repository that also holds the cabinet's unreleased
+  games; each release lands here as one commit. A merged PR is applied
+  there with you as the author and appears here in the next release
+  commit, which is when the PR gets closed with a pointer to it. Issues
+  and Discussions are read here directly.
 
 ## Building a cartridge
 
